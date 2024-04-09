@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Update User</title>
+    <link rel="stylesheet" href="../../css/default.css" />
+    <link rel="stylesheet" href="../../css/result&update.css">
+    <link
+      rel="shortcut icon"
+      href="../../../images/TCTG_LogoBall_T.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.1.5/index.min.js"></script>
+</head>
+<body>
+    <!-- Show Logo -->
+    <div class="logoContainer">
+        <img src="../../../images/TCTG_Logo_T2.png" alt="TCTG Logo" />
+      </div>
+      <!-- Create Div and Nav to hold links between pages -->
+      <div class="navBar">
+        <nav>
+          <!-- Inserts -->
+          <a href="../insert/insertuser.html">Insert User</a>
+          <!-- Searches -->
+          <a href="../search/searchuser.html">Search User</a>
+          <!-- Updates -->
+          <a href="../update/updateuser.html">Update User</a>
+          <!-- Logout -->
+          <a href="../index.html">Logout</a>
+        </nav>
+      </div>
+    <!-- Content will all the information from the Javascript files -->
+    <div id="content"></div>
+    <script type="text/babel" src="../scripts/update/updateuser.js">
+    </script>
+</body>
+</html>

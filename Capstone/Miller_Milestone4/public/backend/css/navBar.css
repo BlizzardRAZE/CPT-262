@@ -1,0 +1,113 @@
+/* Styling the Navigation Bar */
+div.navBarContainer {
+  background-color: var(--darkGreen);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+div.navBarContainer nav#navBar div.navBarJS {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+div.navBarContainer nav#navBar div.navBarJS div.userNameContainer span{
+  color: var(--white);
+}
+
+div.navBarContainer nav#navBar div.navBarJS a {
+  user-select: none;
+  font-size: large;
+  color: var(--whiteO75);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+div.navBarContainer nav#navBar div.navBarJS a:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Style Dropdown */
+div.navBarContainer nav#navBar div.navBarJS div.dropdownContainer {
+  float: left;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+div.navBarContainer
+  nav#navBar
+  div.navBarJS
+  div.dropdownContainer:hover
+  div.dropdownItems {
+  display: block;
+}
+
+div.navBarContainer
+  nav#navBar
+  div.navBarJS
+  div.dropdownContainer
+  div.dropdownItems {
+  display: none;
+  position: absolute;
+  background-color: var(--gray);
+  box-shadow: 0px 8px 16px 0px rgba(26, 25, 25, 0.479);
+  z-index: 1;
+}
+
+div.navBarContainer
+  nav#navBar
+  div.navBarJS
+  div.dropdownContainer
+  div.dropdownItems
+  a {
+  display: block;
+  text-align: left;
+  float: none;
+  padding: 12px 16px;
+  user-select: none;
+  font-size: large;
+  color: var(--whiteO75);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+div.navBarContainer
+  nav#navBar
+  div.navBarJS
+  div.dropdownContainer
+  div.dropdownItems
+  a:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Style Token Errors */
+div.navBarContainer nav#navBar div.tokenErrorContainer {
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+div.navBarContainer nav#navBar div.tokenErrorContainer span {
+  user-select: none;
+  font-size: x-large;
+  color: red;
+  padding: 10px;
+}
+
+div.navBarContainer nav#navBar div.tokenErrorContainer a {
+  user-select: none;
+  font-size: large;
+  color: var(--whiteO75);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+div.navBarContainer nav#navBar div.tokenErrorContainer a:hover {
+  color: var(--white);
+  cursor: pointer;
+}

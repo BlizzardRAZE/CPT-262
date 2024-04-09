@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pinehills - Search Products</title>
+    <link
+      rel="shortcut icon"
+      href="images/Pinehills_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/default.css" />
+    <link rel="stylesheet" href="styles/defaultJS.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.1.5/index.min.js"></script>
+  </head>
+  <body>
+    <!-- Show name of Golf Course-->
+    <div class="titleContainer">
+      <img
+        src="images/Mask_Group_19.png"
+        alt="PineHills Name"
+        draggable="false"
+      />
+    </div>
+
+    <!-- Create Border for Nav -->
+    <div class="navBorder">
+      <!-- Create Nav at top of page-->
+      <div class="navContainer">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="searchproducts.html">View Our Products</a>
+          <a href="insertreservation.html">Schedule a Reservation</a>
+          <a href="searchreservation.html">Search a Reservation</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Create Main -->
+    <main>
+      <!-- Show Content that is Imported from JS File -->
+      <div id="content"></div>
+    </main>
+
+    <!-- Create Footer from JS -->
+    <footer id="footer"></footer>
+
+    <!-- Get Script files -->
+    <script type="text/babel" src="scripts/search/searchproduct.js"></script>
+    <script type="text/babel" src="scripts/footer.js"></script>
+
+  </body>
+</html>

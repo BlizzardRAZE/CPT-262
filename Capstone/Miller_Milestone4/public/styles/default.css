@@ -1,0 +1,268 @@
+/* Default Style for all pages */
+/* Any Additional Styling will go on other pages */
+:root {
+  --bodyColor: #ebe8e8;
+  --textGreen: #2f7f4a;
+  --white: #ffffff;
+  --whiteO75: #ffffff75;
+  --black: #070c05;
+  --gray: #4e4e4e;
+  --lightGray: #c9c8c8;
+  --textGray: #a8a8a8;
+  --green: #4f612a;
+  --lightGreen: #768f13;
+  --darkGreen: #212914;
+  --tan: #c4ac6c;
+  --yellow: #FFC923;
+}
+
+/* Default Style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style Scroll-Bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
+  transition: 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--green);
+}
+
+/* Style Body */
+body {
+  background-color: var(--bodyColor);
+}
+
+/* Style Title */
+div.titleContainer {
+  padding: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+div.titleContainer img {
+  height: 75px;
+}
+
+/* Style Nav on Top */
+div.navBorder {
+  padding: 10px;
+}
+
+div.navBorder div.navContainer nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+div.navBorder div.navContainer a {
+  user-select: none;
+  color: var(--black);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  user-select: none;
+  margin: 10px;
+  transition: 0.2s;
+}
+
+div.navBorder div.navContainer a:hover {
+  color: var(--lightGreen);
+  /* text-shadow: (2px 2px var(--darkGreen)); */
+  cursor: pointer;
+}
+
+/* Style Main */
+main {
+  user-select: none;
+  position: relative;
+  min-height: 60vh;
+}
+
+/* Style div.footerJS */
+div.footerJS {
+  user-select: none;
+  margin-top: 35px;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: var(--darkGreen);
+}
+
+div.footerJS div.footerLogo {
+  align-self: center;
+}
+
+div.footerJS div.footerLogo img {
+  user-select: none;
+  height: 150px;
+}
+
+/* Style div.footerJS Nav */
+div.footerJS div.navContainerFooter {
+  display: flex;
+  align-items: center;
+}
+
+div.footerJS div.navContainerFooter nav {
+  display: flex;
+  flex-direction: column;
+}
+
+div.footerJS div.navContainerFooter nav a {
+  color: var(--whiteO75);
+  font-size: 1em;
+  font-family: sans-serif;
+  text-decoration: none;
+  user-select: none;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+div.footerJS div.navContainerFooter nav a:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Style div.footerJS Contact Info */
+div.footerJS div.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.footerJS div.contactContainer div.addressContainer {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+div.footerJS div.contactContainer div.phoneContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Styles for div.footerJS titles and content */
+span.footerTitle {
+  color: var(--bodyColor);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+span.footerContent {
+  color: var(--whiteO75);
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+div.footerJS a {
+  text-decoration: none;
+  user-select: none;
+}
+
+a span.footerContent:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Style Social Media Icons */
+
+div.footerJS div.socialMediaContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+div.footerJS div.socialMediaContainer div.socialMediaIcon {
+  align-self: center;
+  filter: brightness(0.5);
+  transition: 0.2s;
+}
+
+div.footerJS div.socialMediaContainer div.socialMediaIcon:hover {
+  align-self: center;
+  filter: brightness(1);
+  cursor: pointer;
+}
+
+div.footerJS div.socialMediaContainer div.socialMediaIcon img {
+  height: 45px;
+}
+
+div.footerJS div.searchContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Style Search Box */
+
+div.footerJS div.searchContainer div.searchBox {
+  position: relative;
+  display: flex;
+  border: solid;
+  border-radius: 25px;
+  padding: 5;
+}
+
+div.footerJS div.searchContainer div.searchBox img {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 10px;
+  height: 15px;
+}
+
+div.footerJS div.searchContainer div.searchBox input {
+  height: 20px;
+  margin: 0;
+  padding-left: 30px;
+  border-radius: 25px;
+}
+
+div.footerJS div.searchContainer div.courseLogo {
+  display: flex;
+  justify-content: center;
+}
+
+div.footerJS div.searchContainer div.courseLogo img {
+  height: 50px;
+}
+
+@media only screen and (max-width: 650px){
+  div.footerJS div.contactContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+  }
+  div.footerJS div.socialMediaContainer {
+    display: none;
+  }
+  div.footerJS div.searchContainer {
+    display: none;
+  }
+}
+
+
+/* Custom Font */
+@font-face {
+  font-family: abberyFont;
+  src: url("./fonts/AUBREY1__.TTF");
+}

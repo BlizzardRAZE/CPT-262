@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Insert Reservation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.1.5/index.min.js"></script>
+</head>
+<body>
+    <!-- Create Div and Nav to hold links between pages -->
+    <div>
+        <nav>
+            <!-- Inserts -->
+            <a href="./insertplayer.html">Insert Player</a> | 
+            <a href="./insertproduct.html">Insert Product</a> |
+            <a href="./insertinventory.html">Insert Inventory</a> |
+            <a href="./insertreservation.html">Insert Reservation</a> |
+            <a href="./insertpurchase.html">Insert Purchase</a> |
+            <!-- Searches -->
+            <a href="../search/searchemployee.html">View Employees</a> |
+            <a href="../search/searchplayer.html">View Players</a> |
+            <a href="../search/searchproduct.html">View Products</a> |
+            <a href="../search/searchinventory.html">View Inventory</a> |
+            <a href="../search/searchreservation.html">View Reservations</a> |
+            <a href="../search/searchpurchase.html">View Purchases</a> |
+            <!-- Updates -->
+            <a href="../update/updateproduct.html">Update Products</a> |
+            <a href="../update/updateinventory.html">Update Inventory</a> |
+            <a href="../update/updatereservation.html">Update Reservations</a> |
+        </nav>
+    </div>
+    <!-- Content will all the information from the Javascript files -->
+    <div id="content"></div>
+    <script type="text/babel" src="../scripts/insertreservation.js">
+    </script>
+</body>
+</html>

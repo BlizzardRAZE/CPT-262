@@ -1,0 +1,91 @@
+/* Additional Styles for Login Pages (User/Admin) */
+/* Style Login */
+
+div#content h1{
+  color: var(--white);
+}
+
+div#content div.loginContainer {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  border-radius: 5px;
+  background-color: var(--lightGreen);
+}
+
+div#content div.loginContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+div#content div.loginContainer form h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+div#content div.loginContainer table {
+  display: flex;
+  justify-content: center;
+}
+
+div#content div.loginContainer form table tbody tr {
+  margin-bottom: 25px;
+}
+
+div#content div.loginContainer form table tbody tr th {
+  padding-right: 25px;
+}
+
+div#content div.loginContainer form input#submitButton {
+  margin-top: 15px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  width: fit-content;
+  text-align: center;
+  align-self: center;
+}
+
+div#content div.loginContainer input#submitButton {
+  margin-top: 15px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  width: fit-content;
+  text-align: center;
+  align-self: center;
+}
+
+div#content div.loginContainer div#clearForm{
+  margin: -15px;
+}
+
+/* Style for Nav  */
+div.navContainer {
+  width: fit-content;
+  align-self: center;
+  margin-top: 25px;
+  padding: 10px;
+  display: flex;
+  border: solid;
+  border-radius: 5px;
+  background-color: var(--lightGreen);
+}
+
+div.navContainer nav {
+  justify-self: center;
+}
+
+div.navContainer nav a {
+  color: var(--black);
+  font-size: 24px;
+  font-family: sans-serif;
+  text-decoration: none;
+  user-select: none;
+  margin: 10px;
+  transition: 0.2s;
+}
+
+div.navContainer nav a:hover {
+    color: var(--white);
+    cursor: pointer;
+  }

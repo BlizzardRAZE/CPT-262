@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TCTG Golf Academy - Search Products</title>
+    <link
+      rel="shortcut icon"
+      href="./images/TCTG_LogoBall_T.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/default.css" />
+    <link rel="stylesheet" href="./styles/defaultJS.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.1.5/index.min.js"></script>
+  </head>
+  <body>
+    <!-- Show name of TCTG Golf Academy-->
+    <div class="titleContainer">
+      <span class="title"> TCTG Golf Academy </span>
+    </div>
+
+    <!-- Create Border for Nav -->
+    <div class="navBorder">
+      <!-- Create Nav at top of page-->
+      <div class="navContainer">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="searchproducts.html">View Our Products</a>
+          <a href="insertreservation.html">Schedule a Reservation</a>
+          <a href="searchreservation.html">Search a Reservation</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Create Main -->
+    <main>
+      <!-- Show Content that is Imported from JS File -->
+      <div id="content"></div>
+    </main>
+
+    <!-- Create Footer -->
+    <footer>
+      <!-- Show Logo -->
+      <div class="footerLogo">
+        <img
+          draggable="false"
+          src="./images/TCTG_Logo_T2.png"
+          alt="TCTG Logo Transparent"
+        />
+      </div>
+      <!-- Create Nav at bottom of page-->
+      <div class="navContainerFooter">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="searchproducts.html">View Our Products</a>
+          <a href="insertreservation.html">Schedule a Reservation</a>
+          <a href="searchreservation.html">Search a Reservation</a>
+          <a href="backend/index.html">User Portal</a>
+        </nav>
+      </div>
+      <!-- Create Container to hold contact information -->
+      <div class="contactContainer">
+        <!-- Show Address -->
+        <div class="addressContainer">
+          <span class="footerTitle">Address</span>
+          <a href="https://maps.app.goo.gl/4TXomXLkCnTSHfHf7"
+            ><span class="footerContent">2050 US-501, Conway, SC 29526</span></a
+          >
+        </div>
+        <!-- Show Phone Number -->
+        <div class="phoneContainer">
+          <span class="footerTitle">Phone Number</span>
+          <a href="tel:+18433473186"
+            ><span class="footerContent">(843)-347-3186</span></a
+          >
+        </div>
+      </div>
+
+      <!-- Create Container to hold social media icons -->
+      <div class="socialMediaContainer">
+        <div class="socialMediaIcon">
+          <a target="_blank" href="https://www.facebook.com/gohgtc/">
+            <img
+              draggable="false"
+              src="./images/icons8-fb-250.png"
+              alt="FaceBook Icon"
+            />
+          </a>
+        </div>
+        <div class="socialMediaIcon">
+          <a target="_blank" href="mailto:admissions@hgtc.edu">
+            <img
+              draggable="false"
+              src="./images/icons8-gmail-256.png"
+              alt="GMail Icon"
+            />
+          </a>
+        </div>
+        <div class="socialMediaIcon">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/user/horrygeorgetowntech"
+          >
+            <img
+              draggable="false"
+              src="./images/icons8-youtube-512.png"
+              alt="Youtube Icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Get Script file -->
+    <script type="text/babel" src="./scripts/search/searchproduct.js"></script>
+  </body>
+</html>

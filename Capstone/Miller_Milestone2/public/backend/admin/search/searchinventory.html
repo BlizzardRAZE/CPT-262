@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Search Inventory</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.1.5/index.min.js"></script>
+</head>
+<body>
+    <div>
+        <!-- Create Div and Nav to hold links between pages -->
+        <nav>
+            <!-- Inserts -->
+            <a href="../insert/insertplayer.html">Insert Player</a> | 
+            <a href="../insert/insertemployee.html">Insert Employee</a> |
+            <a href="../insert/insertuser.html">Insert User</a> |
+            <a href="../insert/insertproduct.html">Insert Product</a> |
+            <a href="../insert/insertinventory.html">Insert Inventory</a> |
+            <a href="../insert/insertreservation.html">Insert Reservation</a> |
+            <a href="../insert/insertpurchase.html">Insert Purchase</a> |
+            <!-- Searches -->
+            <a href="./searchemployee.html">View Employees</a> |
+            <a href="./searchplayer.html">View Players</a> |
+            <a href="./searchproduct.html">View Products</a> |
+            <a href="./searchinventory.html">View Inventory</a> |
+            <a href="./searchreservation.html">View Reservations</a> |
+            <a href="./searchpurchase.html">View Purchases</a> |
+            <!-- Updates -->
+            <a href="../update/updateplayer.html">Update Player</a> | 
+            <a href="../update/updateemployee.html">Update Employee</a> |
+            <a href="../update/updateuser.html">Update User</a> |
+            <a href="../update/updateproduct.html">Update Products</a> |
+            <a href="../update/updateinventory.html">Update Inventory</a> |
+            <a href="../update/updatereservation.html">Update Reservations</a> |
+            <a href="../update/updatepurchase.html">Update Purchase</a> |
+        </nav>
+    </div>
+    <!-- Content will all the information from the Javascript files -->
+    <div id="content"></div>
+    <script type="text/babel" src="../../scripts/searchinventory.js">
+    </script>
+</body>
+</html>

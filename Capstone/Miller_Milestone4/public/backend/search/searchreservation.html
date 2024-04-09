@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>View Reservations</title>
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/navBar.css" />
+    <link
+      rel="shortcut icon"
+      href="../../images/Pinehills_logo.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.1.5/index.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Show Logo -->
+    <div class="logoContainer">
+      <img
+        src="../../images/Mask_Group_19.png"
+        alt="PineHills Logo"
+        draggable="false"
+      />
+    </div>
+
+    <!-- Create Div and Nav to hold links between pages -->
+    <div class="navBarContainer">
+      <nav id="navBar"></nav>
+    </div>
+    <!-- Content will all the information from the Javascript files -->
+    <div id="content"></div>
+    <script
+      type="text/babel"
+      src="../scripts/search/searchreservation.js"
+    ></script>
+    <script type="text/babel" src="../scripts/navBar.js"></script>
+  </body>
+</html>

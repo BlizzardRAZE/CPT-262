@@ -1,0 +1,148 @@
+/* Default For JS */
+
+/* Style Content */
+/* div#content {
+  display: flex;
+  justify-content: center;
+} */
+
+div#content div.titleContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px;
+  background-color: var(--darkGreen);
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+div#content div.titleContainer h1 {
+  text-align: center;
+  color: var(--textGreen);
+}
+
+div#content div form h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 34px;
+  color: var(--textGreen);
+}
+
+/* Style Form */
+div#content div form div.formContainer {
+  width: fit-content;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  border-radius: 25px;
+  background-color: var(--darkGreen);
+  text-align: left;
+}
+
+/* Style Input Form */
+div#content div form div.formContainer table {
+  display: flex;
+  justify-content: center;
+}
+
+div#content div form div.formContainer table tbody tr{
+  height: 35px;
+}
+
+div#content div form div.formContainer table tbody tr td{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+/* Style Input Table Headers */
+
+div#content div form div.formContainer table tbody tr th {
+  color: var(--textGray);
+  font-weight: bold;
+  padding-right: 25px;
+}
+
+/* Style Inputs */
+div#content div form div.formContainer table tbody tr td input {
+  height: 20px;
+  background-color: var(--gray);
+  color: var(--white);
+  font-size: 16px;
+  text-indent: 5px;
+  border-radius: 25px;
+}
+
+div#content div form div.formContainer table tbody tr td select {
+  height: 20px;
+  background-color: var(--gray);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+div#content div form.formContainer table tbody tr td span {
+  color: var(--white);
+
+  padding-right: 10px;
+}
+
+div#content div form div.formContainer table tbody tr td#errorField span {
+  display: none;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  padding-right: 10px;
+}
+
+/* Style Input Button */
+div#content div form div.formContainer input#buttonSubmit {
+  margin-top: 15px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+  width: fit-content;
+  text-align: center;
+  align-self: center;
+  background-color: var(--yellow);
+  font-weight: bold;
+  color: var(--gray);
+  transition: 0.2s;
+}
+
+div#content div form div.formContainer input#buttonSubmit:hover {
+  cursor: pointer;
+  color: var(--white);
+}
+
+/* Style Table for any pages that is showing information */
+
+div#content div table#resultData {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  border-collapse: collapse;
+}
+
+div#content div table#resultData thead {
+  border: 2px solid;
+  background-color: var(--darkGreen);
+}
+
+div#content div table#resultData thead tr th {
+  padding: 5px;
+  color: var(--textGreen);
+  border: 3px solid var(--black);
+}
+
+div#content div table#resultData tbody {
+  background-color: var(--lightGray);
+  border: 2px solid;
+  text-align: center;
+}
+
+div#content div table#resultData tbody tr td {
+  border: solid;
+  padding: 5px;
+}

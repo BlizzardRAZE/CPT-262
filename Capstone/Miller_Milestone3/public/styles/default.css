@@ -1,0 +1,205 @@
+/* Default Style for all pages */
+/* Any Additional Styling will go on other pages */
+:root {
+  --bodyColor: #ebe8e8;
+  --white: #ffffff;
+  --whiteO75: #ffffff75;
+  --black: #070c05;
+  --gray: #4e4e4e;
+  --green: #4f612a;
+  --lightGreen: #768f13;
+  --darkGreen: #212914;
+  --tan:#c4ac6c;
+}
+
+/* Default Style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style Scroll-Bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
+  transition: 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--green);
+}
+
+/* Style Body */
+body {
+  background-color: var(--bodyColor);
+}
+
+/* Style Title */
+div.titleContainer {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--darkGreen);
+}
+
+div.titleContainer span.title {
+  user-select: none;
+  align-self: center;
+  font-family: "abberyFont", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  font-size: 3em;
+  color: var(--white);
+}
+
+/* Style Nav on Top */
+div.navBorder {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  border-top: solid;
+  border-bottom: solid;
+  background-color: var(--lightGreen);
+}
+
+div.navBorder div.navContainer a {
+  user-select: none;
+  color: var(--black);
+  font-size: 24px;
+  font-family: sans-serif;
+  text-decoration: none;
+  user-select: none;
+  margin: 10px;
+  transition: 0.2s;
+}
+
+div.navBorder div.navContainer a:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Style Main */
+main{
+  user-select: none;
+  position: relative;
+  min-height: 75vh;
+}
+
+/* Style Footer */
+footer {
+  user-select: none;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--darkGreen);
+}
+
+footer div.footerLogo {
+  align-self: center;
+}
+
+footer div.footerLogo img {
+  user-select: none;
+  height: 150px;
+}
+
+/* Style Footer Nav */
+footer div.navContainerFooter {
+  display: flex;
+  align-items: center;
+}
+
+footer div.navContainerFooter nav {
+  display: flex;
+  flex-direction: column;
+}
+
+footer div.navContainerFooter nav a {
+  color: var(--whiteO75);
+  font-size: 1em;
+  font-family: sans-serif;
+  text-decoration: none;
+  user-select: none;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+footer div.navContainerFooter nav a:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Style Footer Contact Info */
+footer div.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer div.contactContainer div.addressContainer {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer div.contactContainer div.phoneContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Styles for footer titles and content */
+span.footerTitle {
+  color: var(--bodyColor);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+span.footerContent {
+  color: var(--whiteO75);
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+footer a {
+    text-decoration: none;
+    user-select: none;
+  }
+
+a span.footerContent:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+
+/* Style Social Media Icons */
+
+footer div.socialMediaContainer{
+    display: flex;
+    gap: 15px;
+}
+
+footer div.socialMediaContainer div.socialMediaIcon{
+    align-self: center;
+    filter: brightness(0.5);
+    transition: 0.2s;
+}
+
+footer div.socialMediaContainer div.socialMediaIcon:hover{
+    align-self: center;
+    filter: brightness(1);
+    cursor: pointer;
+}
+
+/* Custom Font */
+@font-face {
+  font-family: abberyFont;
+  src: url("./fonts/AUBREY1__.TTF");
+}

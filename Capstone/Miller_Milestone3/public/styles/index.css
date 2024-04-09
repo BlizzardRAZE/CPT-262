@@ -1,0 +1,64 @@
+/* Additional Styles For Index */
+
+/* Style About Us */
+div.aboutUsContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    text-align: center;
+}
+
+/* Title */
+div.aboutUsContainer div.aboutUsTitle{
+    width: fit-content;
+    align-self: center;
+    padding: 5px 25px 5px 25px;
+    border: solid;
+    border-radius: 5px;
+    background-color: var(--lightGreen);
+    
+}
+
+div.aboutUsContainer  span.aboutUs{
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--black);
+}
+
+/* Content in About Us */
+div.aboutUsContainer div.contentContainer{
+    align-self: center;
+    margin-top: 25px;
+    width: 75%;
+    font-size: larger;
+}
+
+/* Style Image Containers */
+div.imageContainer{
+    padding: 50px;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style Images */
+
+div.imageContainer img#leftImage{
+    height: 175px;
+    position: relative;
+    right: 50px;
+}
+
+
+div.imageContainer img#middleImage{
+    height: 175px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+div.imageContainer img#rightImage{
+    height: 175px;
+    position: relative;
+    left: 50px;
+}
