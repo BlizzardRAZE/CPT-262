@@ -1,0 +1,103 @@
+/* Additional Styles for Login Pages (User/Admin) */
+/* Style Login */
+
+div#content div {
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+
+div#content div div.titleContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px;
+  background-color: var(--darkGreen);
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+div#content div div.titleContainer h1 {
+  text-align: center;
+  color: var(--textGreen);
+}
+
+div#content div div.loginContainer {
+  align-self: center;
+  padding: 35px;
+  background-color: var(--darkGreen);
+  font-size: 28px;
+  width: fit-content;
+  border: 4px solid;
+  border-radius: 25px;
+}
+
+div#content div div.loginContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+div#content div div.loginContainer form h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+div#content div div.loginContainer table {
+  display: flex;
+  justify-content: center;
+}
+
+div#content div div.loginContainer form table tbody tr {
+  height: 35px;
+  margin-bottom: 25px;
+}
+
+div#content div div.loginContainer form table tbody tr th {
+  font-size: 20px;
+  color: var(--textGray);
+  padding-right: 25px;
+}
+
+div#content div div.loginContainer form table tbody tr td input {
+  text-indent: 5px;
+  height: 20px;
+  border-radius: 25px;
+}
+
+div#content div div.loginContainer form table tbody tr td#noAccount {
+    text-align: center;
+  }
+
+div#content div div.loginContainer form table tbody tr td a {
+  color: var(--whiteO75);
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+div#content div div.loginContainer form table tbody tr td a:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+div#content div div.loginContainer form input#submitButton {
+  margin-top: 15px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+  width: fit-content;
+  text-align: center;
+  align-self: center;
+  font-weight: bold;
+  color: var(--black);
+  background-color: var(--yellow);
+  transition: 0.2s;
+}
+
+div#content div div.loginContainer form input#submitButton:hover {
+  cursor: pointer;
+  color: var(--white);
+}
+
+div#content div div.loginContainer div#clearForm {
+  margin: -15px;
+}

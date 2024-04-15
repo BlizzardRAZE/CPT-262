@@ -1,0 +1,112 @@
+/* Additional Styles For Index */
+
+/* Style Main Image */
+div.largeImageContainer{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-image: url("../images/Mask_Group_11.png");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+}
+div.largeImageContainer div.largeLogo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #0000009c;
+}
+div.largeImageContainer div.largeLogo img {
+    align-self: center;
+    height: 275px;
+}
+
+/* Style About Us */
+div.aboutUsContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Title */
+div.aboutUsContainer div.aboutUsTitle{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 25px 5px 25px;
+    
+}
+
+div.aboutUsContainer  span.aboutUs{
+    font-size: 4em;
+    font-weight: bold;
+    color: var(--textGreen);
+}
+
+
+/* Divider above About Us Content */
+div.aboutUsContainer div.dividerContainer{
+    margin: 35px 0 35px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.aboutUsContainer div.dividerContainer div.dividerLine{
+    position: absolute;
+    background-color: var(--gray);
+    width: 100%;
+    height: 5px;
+}
+
+div.aboutUsContainer div.dividerContainer div.dividerCourseName{
+    width: 50%;
+    position: absolute;
+    border: solid 2px var(--black);
+    border-radius: 25px;
+    background-color: var(--darkGreen);
+}
+
+div.aboutUsContainer div.dividerContainer div.dividerCourseName img{
+    height: 65px;
+}
+
+/* Content in About Us */
+div.aboutUsContainer div.contentContainer{
+    align-self: center;
+    margin-top: 25px;
+    width: 75%;
+    font-size: larger;
+}
+
+/* Style Image Containers */
+div.imageContainer{
+    padding: 50px;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style Images */
+
+div.imageContainer img#leftImage{
+    height: 175px;
+    position: relative;
+    right: 50px;
+}
+
+
+div.imageContainer img#middleImage{
+    height: 175px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+div.imageContainer img#rightImage{
+    height: 175px;
+    position: relative;
+    left: 50px;
+}

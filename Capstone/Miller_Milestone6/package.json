@@ -1,0 +1,22 @@
+{
+  "name": "Miller_Milestone6",
+  "version": "1.0.0",
+  "description": "Miller_Milestone6",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Trent Miller"
+  },
+  "dependencies": {
+    "bcrypt":"^4.0.1",
+    "body-parser": "^1.19.1",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "react": "^16.14.0"
+  }
+}

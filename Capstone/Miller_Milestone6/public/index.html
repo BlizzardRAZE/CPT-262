@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pinehills - Home</title>
+    <link
+      rel="shortcut icon"
+      href="images/Pinehills_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/default.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.1.5/index.min.js"></script>
+  </head>
+  <body>
+    <!-- Show name of Golf Course-->
+    <div class="titleContainer">
+      <img
+        src="images/Mask_Group_19.png"
+        alt="PineHills Name"
+        draggable="false"
+      />
+    </div>
+
+    <!-- Create Border for Nav -->
+    <div class="navBorder">
+      <!-- Create Nav at top of page-->
+      <div class="navContainer">
+        <nav id="navBar"></nav>
+      </div>
+    </div>
+
+    <!-- Show Image of golf course -->
+    <div class="largeImageContainer" draggable="false">
+      <!-- Show Logo -->
+      <div class="largeLogo">
+        <img
+        src="images/Pinehills_logo.png"
+        alt="PineHills Logo"
+        draggable="false"
+      />
+      </div>
+      
+    </div>
+
+    <!-- Show Content that is Imported from JS File -->
+    <div id="content"></div>
+
+    <!-- Create Main to hold all the content information -->
+    <main>
+      <!-- Create Container to hold About Us -->
+      <div class="aboutUsContainer">
+        <!-- Show Title of Container -->
+        <div class="aboutUsTitle">
+          <span class="aboutUs">About Us</span>
+        </div>
+
+        <!-- Create Divider Container to hold image and line-->
+        <div class="dividerContainer">
+          <!-- Show line -->
+          <div class="dividerLine"></div>
+          <!-- Show Name of course -->
+          <div class="dividerCourseName">
+            <img
+              src="images/Mask_Group_19.png"
+              alt="PineHills Name"
+              draggable="false"
+            />
+          </div>
+        </div>
+
+        <!-- Show Content -->
+        <div class="contentContainer">
+          PineHills was originally built in 1966 and was formally named The
+          Pines. The course was reopened in 1993 with a different feel and
+          twist. Architect Arthur Hills, designed the award winning course and
+          is his only one along the Grand Strand. PineHills at MyrtleWood Golf
+          Club been singled out by Golf Digest as one of the “Top Ten Courses”
+          in Myrtle Beach, it also bears the distinction of being the first and
+          only Grand Strand golf course designed by award.
+          <br />
+          <br />
+          PineHills is one of Myrtle Beach's most player-friendly designs,
+          combining the creativity of Arthur Hills' architectural work with
+          premium conditions to deliver an experience that brings players back
+          every year. The course's character-filled greens complexes, which
+          reward precision on the approach and quality recovery shots, are among
+          the highlights of a round at PineHills.
+        </div>
+      </div>
+
+      <!-- Create a line to separate content and images -->
+      <hr />
+      <!-- Hold Images -->
+      <div class="imageContainer">
+        <img
+          id="leftImage"
+          src="images/f7.png"
+          alt="Course with Pond and Sand"
+          draggable="false"
+        />
+        <img
+          id="middleImage"
+          src="images/Myrtlewood_Entrance.png"
+          alt="Golf Club and Golf Ball"
+          draggable="false"
+        />
+        <img
+          id="rightImage"
+          src="images/PineHills-17.png"
+          alt="Course Above Shot"
+          draggable="false"
+        />
+      </div>
+
+      <hr />
+    </main>
+    <!-- Create Footer from JS -->
+    <footer id="footer">
+    </footer>
+    <!-- Get JS Files -->
+    <script type="text/babel" src="scripts/navBar.js"></script>
+    <script type="text/babel" src="scripts/footer.js"></script>
+  </body>
+</html>

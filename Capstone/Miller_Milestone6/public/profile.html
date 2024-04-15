@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pinehills - Profile</title>
+    <link
+      rel="shortcut icon"
+      href="images/Pinehills_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/default.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/profile.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.1.5/index.min.js"></script>
+  </head>
+  <body>
+    <!-- Show name of Golf Course-->
+    <div class="titleContainer">
+      <img
+        src="images/Mask_Group_19.png"
+        alt="PineHills Name"
+        draggable="false"
+      />
+    </div>
+
+    <!-- Create Border for Nav -->
+    <div class="navBorder">
+      <!-- Create Nav at top of page-->
+      <div class="navContainer">
+        <nav id="navBar"></nav>
+      </div>
+    </div>
+
+
+    <!-- Show Content that is Imported from JS File -->
+    <div id="content"></div>
+
+    <!-- Create Footer from JS -->
+    <footer id="footer">
+    </footer>
+    <!-- Get JS Files -->
+    <script type="text/babel" src="scripts/profile.js"></script>
+    <script type="text/babel" src="scripts/navBar.js"></script>
+    <script type="text/babel" src="scripts/footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+/* Default Style for all pages */
+/* Any Additional Styling will go on other pages */
+:root {
+  --bodyColor: #ebe8e8;
+  --textGreen: #2f7f4a;
+  --white: #ffffff;
+  --whiteO75: #ffffff75;
+  --black: #070c05;
+  --gray: #4e4e4e;
+  --lightGray: #c9c8c8;
+  --textGray: #a8a8a8;
+  --green: #4f612a;
+  --lightGreen: #768f13;
+  --darkGreen: #212914;
+  --tan: #c4ac6c;
+  --yellow: #ffc923;
+}
+
+/* Default Style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style Scroll-Bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--tan);
+  transition: 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--lightGreen);
+}
+
+/* Style Body */
+body {
+  background-color: var(--bodyColor);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--green);
+}
+
+/* Style Logo */
+div.logoContainer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--darkGreen);
+}
+
+/* Style Image */
+div.logoContainer img {
+  height: 100px;
+}
+
+/* Style Content */
+div#content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+div#content h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  user-select: none;
+}
+
+/* Style Form */
+div#content div form.formContainer {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  border-radius: 5px;
+  background-color: var(--lightGreen);
+}
+
+div#content div form.formContainer h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: var(--white);
+  user-select: none;
+}
+
+/* Style Input Form */
+div#content div form.formContainer table {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style Input Table Headers */
+div#content div form.formContainer table tbody tr th {
+  user-select: none;
+  color: var(--white);
+  padding-right: 25px;
+}
+
+/* Style Inputs */
+div#content div form.formContainer table tbody tr td input {
+  border-radius: 5px;
+  background: var(--white);
+  border: 2px solid;
+}
+
+div#content div form.formContainer table tbody tr td select {
+  border: solid 2px;
+  border-radius: 5px;
+}
+
+div#content
+  div
+  form.formContainer
+  table
+  tbody
+  tr
+  td
+  div.productDescriptionTM
+  textarea {
+  padding: 5px;
+  width: 155px;
+  height: 100px;
+  border: solid 2px;
+  border-radius: 5px;
+  resize: none;
+}
+
+div#content div form.formContainer table tbody tr td span {
+  font-weight: bold;
+  color: var(--white);
+  padding-right: 10px;
+}
+
+div#content div form.formContainer table tbody tr td#errorField span {
+  font-weight: bold;
+  color: var(--white);
+  padding-right: 10px;
+}
+
+/* Style Input Button */
+div#content div form.formContainer input#buttonSubmit {
+  margin-top: 15px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  width: fit-content;
+  text-align: center;
+  align-self: center;
+  font-weight: bold;
+  color: var(--black);
+  background-color: var(--yellow);
+  transition: 0.2s;
+}
+
+div#content div form.formContainer input#buttonSubmit:hover {
+  cursor: pointer;
+  color: var(--white);
+}
+
+/* Style Table for any pages that is showing information */
+
+div#content div table#resultData {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  border-collapse: collapse;
+}
+
+div#content div table#resultData thead {
+  border: 2px solid;
+  background-color: var(--lightGreen);
+}
+
+div#content div table#resultData thead tr th {
+  width: 25%;
+  color: var(--white);
+  padding: 15px;
+}
+
+div#content div table#resultData tbody {
+  border: 2px solid;
+  background-color: var(--tan);
+  text-align: center;
+}
+
+div#content div table#resultData tbody tr td {
+  padding: 5px;
+}
+
+/* Style any errors */
+div#content div.permissionErrorContainer {
+  margin: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+div#content div.permissionErrorContainer span {
+  user-select: none;
+  font-size: x-large;
+  color: red;
+  padding: 10px;
+}
+
+div#content div.permissionErrorContainer a {
+  user-select: none;
+  font-size: large;
+  color: var(--whiteO75);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+div#content div.permissionErrorContainer a:hover {
+  color: var(--white);
+  cursor: pointer;
+}

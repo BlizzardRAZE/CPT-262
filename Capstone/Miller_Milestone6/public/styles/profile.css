@@ -1,0 +1,71 @@
+/* Profile Styling */
+div#content div.mainContentBox {
+    user-select: none;
+}
+
+div#content div.mainContentBox div.titleContainer{
+    font-size: 2em;
+    padding:25px;
+    margin: 0px 0px 0px 0px;
+    background-color: var(--darkGreen);
+    text-align: center;
+}
+
+div#content div.mainContentBox div.titleContainer h1{
+    color: var(--textGreen);
+}
+
+div#content div.mainContentBox div.playerCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 200px 0 200px 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid;
+    border-radius: 25px;
+    background-color: var(--darkGreen);
+    padding: 25px;
+}
+
+
+div#content div.mainContentBox div.playerCard div.playerImage img{
+    height: 75px;
+    filter: invert(70%);
+}
+
+div#content div.mainContentBox div.playerCard div.playerInformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+div#content div.mainContentBox div.playerCard div.playerInformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    color: var(--textGray);
+    line-height: 2;
+}
+
+/* Error Styling */
+div#content div.permissionErrorContainer div.titleContainer{
+    font-size: 2em;
+    padding:25px;
+    margin: 0px 0px 0px 0px;
+    background-color: var(--darkGreen);
+    text-align: center;
+}
+
+div#content div.permissionErrorContainer div.titleContainer span{
+    color: var(--textGreen);
+}
+
+div#content div.permissionErrorContainer div.imageContainer{
+    height: 300px;
+}

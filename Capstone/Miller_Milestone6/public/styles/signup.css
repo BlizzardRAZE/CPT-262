@@ -1,0 +1,105 @@
+/* Sign Up Style */
+
+div#content div.mainContentBox {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+  }
+  
+  div#content div.mainContentBox div.titleContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+    background-color: var(--darkGreen);
+    margin-bottom: 25px;
+    font-size: 28px;
+  }
+  
+  div#content  div.mainContentBox  div.titleContainer h1 {
+    text-align: center;
+    color: var(--textGreen);
+  }
+  
+  div#content div.mainContentBox form.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 35px;
+    background-color: var(--darkGreen);
+    font-size: 28px;
+    width: fit-content;
+    border: 4px solid;
+    border-radius: 25px;
+  }
+  
+  
+  div#content div.mainContentBox form.formContainer h2 {
+    font-size: 34px;;
+    margin-bottom: 34px;
+    text-align: center;
+    color: var(--textGreen);
+  }
+  
+  div#content div.mainContentBox form.formContainer table {
+    display: flex;
+    justify-content: center;
+  }
+  
+  div#content div.mainContentBox form.formContainer table tbody tr {
+    height: 35px;
+    margin-bottom: 25px;
+  }
+  
+  div#content div.mainContentBox form.formContainer table tbody tr th {
+    font-size: 20px;
+    color: var(--textGray);
+    padding-right: 25px;
+  }
+  
+  div#content div.mainContentBox form.formContainer table tbody tr td input {
+    text-indent: 5px;
+    height: 20px;
+    border-radius: 25px;
+  }
+
+  div#content div.mainContentBox form.formContainer table tbody tr td#errorField {
+    padding-left: 25px;
+    font-size: 20px;
+    color: var(--tan);
+  }
+
+  div#content div.mainContentBox form.formContainer table tbody tr td#alignInput {
+    text-align: center;
+  }
+  
+  div#content div.mainContentBox form.formContainer table tbody tr td a {
+    color: var(--whiteO75);
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+  div#content div.mainContentBox form.formContainer table tbody tr td a:hover {
+      color: var(--white);
+      cursor: pointer;
+    }
+  
+  div#content div.mainContentBox form.formContainer input#buttonSubmit {
+    margin-top: 15px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+    width: fit-content;
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+    color: var(--black);
+    background-color: var(--yellow);
+    transition: 0.2s;
+  }
+  
+  div#content div.mainContentBox form.formContainer input#buttonSubmit:hover {
+    cursor: pointer;
+    color: var(--white);
+  }
+  
